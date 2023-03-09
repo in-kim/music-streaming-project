@@ -65,6 +65,7 @@ export default function Player(): JSX.Element {
   const handleSeekMouseUp = (e: any) => {
     setSeeking(false);
     // music.seekTo(parseFloat(e.target.value));
+    // test
   };
   const clickLike = () => {
     setLike((prev) => (prev = !prev));
