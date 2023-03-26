@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Modal from '../../components/modal'
+// import Modal from '../../components/modal'
 
-export default function findId() {
-    const [showModal, setShowModal] = useState(false);
+export default function findId(): JSX.Element {
+    // const [showModal, setShowModal] = useState(false);
     return (
         <div>
             <div>
                 <button onClick={() => setShowModal(true)}>Open Modal</button>
-                <Modal
-                    onClose={() => setShowModal(false)}
-                    show={showModal}
-                >
-                    아이디는 test1 입니다.
-                </Modal>
+                {/*<Modal*/}
+                {/*    onClose={() => setShowModal(false)}*/}
+                {/*    show={showModal}*/}
+                {/*>*/}
+                {/*    아이디는 test1 입니다.*/}
+                {/*</Modal>*/}
             </div>
             <div className="wrapper">
                 <form>

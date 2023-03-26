@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function signup() {
+export default function signup(): JSX.Element {
     return (
         <div>
             <div className="wrapper">
@@ -9,10 +9,11 @@ export default function signup() {
                     <input className="idpw" name="id" placeholder="아이디(이메일)"
                            type="text"
                            id="roll"
-                           name="roll"
+                           // name="roll"
                            required
-                           minLength="10"
-                           maxLength="20"/>
+                           // minLength="10"
+                           // maxLength="20"
+                    />
                     <input className="idpw" name="password" placeholder="비밀번호"
                            type="password"
                            required
@@ -29,6 +30,12 @@ export default function signup() {
                 </form>
             </div>
             <style jsx>{`
+                .wrapper {
+                  border: 1px solid #d9d9d9;
+                  width: 682px;
+                  padding: 50px 120px;
+                  margin: 0 auto;
+                }
                 label {
                     color: #181818;
                     text-align: center;
